@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <link rel="logo icon" href="starbucks-logo.png" type="image/x-icon">
+    <link rel="logo icon" href="starbucks-logo.png" type="image/x-icon" />
     <title>Starbucks | Clone</title>
   </head>
   <body>
-
     <!-- navbar -->
-    <nav class="shadow-md">
-      <div class="justify-between items-center px-8 py-4 md:flex">
+    <nav>
+      <div class="shadow-md justify-between items-center px-8 py-4 md:flex">
         <!-- left side -->
         <div class="md:flex items-center">
           <!-- logo -->
@@ -43,7 +42,6 @@
             <div class="ml-5">Gift Cards</div>
           </div>
         </div>
-
         <!-- right side -->
         <div class="font-semibold items-center gap-12 md:flex">
           <div class="hidden md:flex justify-between items-center gap-2">
@@ -88,7 +86,7 @@
           />
         </div>
         <div
-          class="bg-heroSectionOrange text-heroSectionTextColor flex-1 p-8 text-center space-y-6 md:items-center md:justify-center md:flex md:flex-col"
+          class="bg-heroSectionOrange text-heroSectionTextColor flex-1 py-8 text-center space-y-6 md:items-center md:justify-center md:flex md:flex-col"
         >
           <h3 class="text-3xl font-semibold lg:text-6xl">Turn up the bright</h3>
           <p class="font-medium text-2xl lg:text-3xl">
@@ -103,27 +101,72 @@
       </div>
     </section>
 
+    <!-- savoury section -->
+    <section>
+      <div class="flex flex-col my-8 md:flex-row-reverse lg:mx-8">
+        <div class="flex-1">
+          <img
+            alt="A breakfast sandwich showing breaded chicken on top of an egg patty."
+            class="block"
+            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88294.jpg"
+          />
+        </div>
+        <div
+          class="bg-contentBgBlock text-heroSectionTextColor flex-1 py-8 text-center space-y-6 md:items-center md:justify-center md:flex md:flex-col"
+        >
+          <h3 class="text-3xl font-semibold lg:text-6xl">
+            Savory and satisfying
+          </h3>
+          <p class="font-medium text-2xl lg:text-3xl">
+            Grab a subtly sweet Chicken, Maple Butter & Egg Sandwich on the way.
+          </p>
+          <button class="ou tline rounded-full py-1 px-4 font-bold">
+            Order now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- go-to section -->
+    <section>
+      <div class="mb-8 bg-gotoBgColor md:flex lg:mx-8">
+        <div class="flex-1">
+          <img
+            alt="A red DoorDash bag sits next to a Starbucks drink carrier holding four beverages."
+            class="block"
+            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88373.jpg"
+          />
+        </div>
+        <div
+          class="text-white p-8 text-center flex-1 md:px-0 lg:items-center lg:justify-center lg:flex"
+        >
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold lg:text-4xl">
+              Your go-to brought to you
+            </h3>
+            <p class="text-lg md:px-6">
+              Enjoy 20% off Starbucks orders of $15+ on DoorDash. Offer valid
+              1/22-2/4. New customers only. Max discount up to $5. Terms apply.*
+            </p>
+            <button class="outline rounded-full py-1 px-4 font-bold">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Community content section -->
     <section>
       <div class="mb-8 md:flex lg:mx-8">
         <div
-          class="flex-1 bg-contentImgBgColor flex justify-center items-center md:px-8"
-        >
-          <img
-            alt="A group of people in green aprons posing for a photo."
-            class="block"
-            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88333.jpg"
-          />
-        </div>
-
-        <div
           class="bg-contentBgColor text-white p-8 text-center flex-1 md:px-0 lg:items-center lg:justify-center lg:flex"
         >
           <div class="space-y-6">
-            <h3 class="text-2xl font-semibold lg:text-4xl">
+            <h3 class="text-2xl font-semibold">
               “This is our community. We’re in it together.”
             </h3>
-            <p class="font-medium text-lg lg:text-3xl">
+            <p class="font-medium text-lg">
               - Olivia, Starbucks Partner (Employee)
             </p>
             <p class="text-lg">
@@ -134,51 +177,14 @@
             </button>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- savoury section -->
-    <section>
-      <div class="flex flex-col my-8 md:flex-row-reverse lg:mx-8">
-        <div class="flex-1">
-          <img alt="A breakfast sandwich showing breaded chicken on top of an egg patty." class="block" src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88294.jpg">
-        </div>
         <div
-          class="bg-contentBgBlock text-heroSectionTextColor flex-1 p-8 text-center space-y-6 md:items-center md:justify-center md:flex md:flex-col"
+          class="flex-1 bg-contentImgBgColor flex justify-center items-center"
         >
-          <h3 class="text-3xl font-semibold lg:text-6xl">Savory and satisfying</h3>
-          <p class="font-medium text-2xl lg:text-3xl">
-            Grab a subtly sweet Chicken, Maple Butter & Egg Sandwich on the way.
-          </p>
-          <button class="outline rounded-full py-1 px-4 font-bold">
-            Order now
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- go-to section -->
-    <section>
-      <div class="mb-8 bg-gotoBgColor md:flex lg:mx-8">
-        <div
-          class="flex-1"
-        >
-        <img alt="A red DoorDash bag sits next to a Starbucks drink carrier holding four beverages." class="block" src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88373.jpg">
-        </div>
-
-        <div
-          class="text-white p-8 text-center flex-1 md:px-0 lg:items-center lg:justify-center lg:flex"
-        >
-          <div class="space-y-6">
-            <h3 class="text-2xl font-semibold lg:text-4xl">
-              Your go-to brought to you
-            </h3>
-            <p class="text-lg md:px-6">
-              Enjoy 20% off Starbucks orders of $15+ on DoorDash. Offer valid 1/22-2/4. New customers only. Max discount up to $5. Terms apply.*            </p>
-            <button class="outline rounded-full py-1 px-4 font-bold">
-              Learn more
-            </button>
-          </div>
+          <img
+            alt="A group of people in green aprons posing for a photo."
+            class="block"
+            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88333.jpg"
+          />
         </div>
       </div>
     </section>
@@ -188,14 +194,157 @@
       <div class="shadow-md">
         <div class="flex items-center justify-center py-8">
           <div class="max-w-2xl text-center">
-            *Valid 1/22-2/4, enjoy 20% off your Starbucks order of $15 or more through the DoorDash app, excluding taxes and fees. Maximum discount is up to $5. New customers only. Restrictions and other taxes/fees/gratuity still apply. See DoorDash app for details and location availability. Fees subject to change. Restricted delivery area. Menu limited. Delivery orders may be limited to a maximum subtotal no more than $100, excluding taxes and fees, on any single transaction. We may adjust this limit at any time at our discretion. Product image may vary from delivered product. Available at participating locations only. All deliveries subject to availability. Must have or create a valid DoorDash account with valid form of accepted payment on file. No cash value. Non-transferable. Prices for Starbucks items purchased through DoorDash may be higher than as marked or posted in stores. May not be combined with other offers, discounts or promotions. See DoorDash terms and conditions at 
-            <a class="underline underline-offset-2" href="https://help.doordash.com/consumers/s/article/offer-terms-conditions">help.doordash.com/consumers/s/article/offer-terms-conditions</a>
+            *Valid 1/22-2/4, enjoy 20% off your Starbucks order of $15 or more
+            through the DoorDash app, excluding taxes and fees. Maximum discount
+            is up to $5. New customers only. Restrictions and other
+            taxes/fees/gratuity still apply. See DoorDash app for details and
+            location availability. Fees subject to change. Restricted delivery
+            area. Menu limited. Delivery orders may be limited to a maximum
+            subtotal no more than $100, excluding taxes and fees, on any single
+            transaction. We may adjust this limit at any time at our discretion.
+            Product image may vary from delivered product. Available at
+            participating locations only. All deliveries subject to
+            availability. Must have or create a valid DoorDash account with
+            valid form of accepted payment on file. No cash value.
+            Non-transferable. Prices for Starbucks items purchased through
+            DoorDash may be higher than as marked or posted in stores. May not
+            be combined with other offers, discounts or promotions. See DoorDash
+            terms and conditions at
+            <a
+              class="underline underline-offset-2"
+              href="https://help.doordash.com/consumers/s/article/offer-terms-conditions"
+              >help.doordash.com/consumers/s/article/offer-terms-conditions</a
+            >
             .
           </div>
         </div>
       </div>
     </section>
-     
-    
+
+    <!-- Footer -->
+    <footer class="lg:py-6 shadow-md">
+      <!-- outer/wrapper div -->
+      <div class="lg:px-10">
+        <div class="lg:flex">
+          <!-- about us section -->
+          <div class="max-w-48">
+            <h2 class="mb-6 lg:text-lg font-medium">About Us</h2>
+            <div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Our Company</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Our Coffee</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Story and News</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Starbucks Archive</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Investor Relations</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Customer Service</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <!-- Carrers section -->
+          <div class="ml-8 max-w-48">
+            <h2 class="mb-6 lg:text-lg font-medium">Carrers</h2>
+            <div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Culture and Values</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Inclusion, Diversity, and Equity</a
+                >
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">College Achievement Plan</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Alumni Community</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">U.S. Careers</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">International Careers</a>
+              </div>
+            </div>
+          </div>
+          <!-- Social Impact section -->
+          <div class="ml-8 max-w-48">
+            <h2 class="mb-6 lg:text-lg font-medium">Social Impact</h2>
+            <div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">People</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Planet</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Environmental and Social Impact Reporting</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- For Business Partners section -->
+          <div class="ml-8 max-w-48">
+            <h2 class="mb-6 lg:text-lg font-medium">For Business Partners</h2>
+            <div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Landlord Report Center</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Suppliers</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Corporate Gift Card Sales</a
+                >
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Office and Foodservice Coffee</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Order and pickup section -->
+          <div class="ml-8 max-w-48">
+            <h2 class="mb-6 lg:text-lg font-medium">Order and Pick Up</h2>
+            <div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Order on the App</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Order on the Web</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2">Delivery</a>
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Order and Pick Up Options</a
+                >
+              </div>
+              <div class="lg:mb-2">
+                <a href="#" class="lg:py-2"
+                  >Explore and Find Coffee for Home</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
